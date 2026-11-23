@@ -12,6 +12,11 @@ public class DozeKizuki extends Oni {
         super(nome);
     }
 
+    public DozeKizuki(String nome, int posicao) {
+        super(nome);
+        setPosicao(posicao);
+    }
+
     public int getPosicao() {
         return posicao;
     }
