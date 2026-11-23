@@ -20,4 +20,13 @@ public class CacadorDeOnis extends Humano {
         this.respiracao = respiracao;
 
     }
+
+    @Override
+    public void exibirInformacoes() {
+        super.exibirInformacoes();
+
+        if (respiracao != null) {
+            System.out.println("Respiração: " + respiracao.getNome());
+        }
+    }
 }
