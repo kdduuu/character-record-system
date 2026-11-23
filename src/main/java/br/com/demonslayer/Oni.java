@@ -19,4 +19,13 @@ public class Oni extends Personagem {
     public void setKekkijutsu(Kekkijutsu kekkijutsu) {
         this.kekkijutsu = kekkijutsu;
     }
+
+    @Override
+    public void exibirInformacoes() {
+        super.exibirInformacoes();
+
+        if (kekkijutsu != null) {
+            System.out.println("Kekkijutsu: " + kekkijutsu.getNome());
+        }
+    }
 }
