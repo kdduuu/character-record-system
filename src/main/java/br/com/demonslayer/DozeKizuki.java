@@ -4,14 +4,6 @@ public class DozeKizuki extends Oni {
 
     private int posicao;
 
-    public DozeKizuki() {
-        super();
-    }
-
-    public DozeKizuki(String nome) {
-        super(nome);
-    }
-
     public DozeKizuki(String nome, int posicao) {
         super(nome);
         setPosicao(posicao);
@@ -29,5 +21,11 @@ public class DozeKizuki extends Oni {
         }
 
         this.posicao = posicao;
+    }
+
+    @Override
+    public void exibirInformacoes() {
+        super.exibirInformacoes();
+        System.out.println("Posição: " + posicao);
     }
 }
